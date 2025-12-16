@@ -1,5 +1,11 @@
 # @joyid/ckb
 
+## 1.1.3
+
+### Patch Changes
+
+- update joyid mainnet lock dep
+
 ## 1.1.2
 
 ### Patch Changes
