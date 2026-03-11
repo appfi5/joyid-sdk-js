@@ -386,3 +386,6 @@ export {
 } from './constants'
 
 export { Aggregator } from './aggregator'
+
+// Cross-browser auth: redirect flow works on Brave/Firefox where popup relay fails
+export { authWithRedirect, authCallback, isRedirectFromJoyID } from '@joyid/common'
