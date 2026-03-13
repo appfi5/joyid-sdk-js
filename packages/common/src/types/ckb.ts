@@ -72,6 +72,27 @@ export interface CkbTransactionRequest {
   from: string
   to: string
   amount: string
+  /**
+   * Optional hex-encoded data to include in the output cell's data field.
+   *
+   * Supports:
+   *   - Hex string with 0x prefix: `"0x494e562d32303236"` (raw bytes)
+   *   - UTF-8 string without prefix: `"INV-2026-0042"` (app will hex-encode)
+   *
+   * Use cases:
+   *   - Invoice IDs for POS terminals (permanently on-chain, indexable)
+   *   - Memo fields for payment traceability
+   *   - IoT/device payment attestation payloads
+   *
+   * Maps to: `outputsData[0]` in the resulting CKB transaction.
+   * Passed through the `nervos:` URI scheme as `?data=<value>`.
+   *
+   * Note: cell data increases minimum cell capacity by ~1 shannon per byte.
+   * Keep under 256 bytes for reasonable tx fees.
+   *
+   * See: https://github.com/nervina-labs/joyid-sdk-js/issues/59
+   */
+  data?: string
 }
 
 export interface CkbDappConfig extends JoyIDConfig {
