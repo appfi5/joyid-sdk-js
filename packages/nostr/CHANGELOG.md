@@ -1,5 +1,12 @@
 # @joyid/nostr
 
+## 0.2.2
+
+### Patch Changes
+
+- Updated dependencies [[`ab693c8`](https://github.com/nervina-labs/joyid-sdk-js/commit/ab693c88caf32b8cbf20e0490e9d751a9046934b)]:
+  - @joyid/common@0.2.2
+
 ## 0.2.1
 
 ### Patch Changes
