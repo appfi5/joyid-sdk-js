@@ -1,5 +1,12 @@
 # @joyid/rainbowkit
 
+## 2.0.11
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @joyid/wagmi@2.0.11
+
 ## 2.0.10
 
 ### Patch Changes
